@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package com.gestures.settings.device;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
@@ -43,7 +43,7 @@ public class DozePreferenceActivity extends PreferenceActivity {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             addPreferencesFromResource(R.xml.doze_panel);
-            boolean dozeEnabled = CMActionsSettings.isDozeEnabled(getActivity().getContentResolver());
+            boolean dozeEnabled = ActionsSettings.isDozeEnabled(getActivity().getContentResolver());
             mAmbientDisplayPreference = (SwitchPreference) findPreference(KEY_AMBIENT_DISPLAY_ENABLE);
             // Read from DOZE_ENABLED secure setting
             mAmbientDisplayPreference.setChecked(dozeEnabled);
