@@ -33,9 +33,9 @@
         <activity
             android:name=".DozePreferenceActivity"
             android:label="@string/ambient_display_title"
-            android:theme="@style/CMActions">
+            android:theme="@style/Gestures">
             <intent-filter>
-                <action android:name="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
+                <action android:name="org.gestures.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
